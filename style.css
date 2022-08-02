@@ -1,0 +1,111 @@
+body{
+	width: 0 auto;
+	background-color: #f2f2f2;
+	margin: 0;
+	box-sizing: border-box;
+}
+header {
+	width: 100%;
+	height: auto;
+}
+.desctop {
+	
+	width: 69rem;
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	justify-content: space-between;
+	margin-top: 4rem;
+
+}
+.desctop ul{
+	
+	margin: auto;
+	
+
+}
+.list-item{
+	
+	display: inline-block;
+	list-style: none;
+	justify-items: space-between;
+
+}
+.list-item a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #33323D;
+	font-family: 'Public Sans', serif;
+	padding-left: 2.8rem;
+	font-size: 12px;
+	line-height: auto;
+	letter-spacing: 2px;
+
+}
+.list-item a:hover {
+	color: #5FB4A2;
+}
+li .active {
+   color: #5FB4A2;
+}
+.mobile{
+	display: none;
+}
+
+
+
+@media only screen and (max-width: 760px){
+
+	.desctop{
+		display: none;
+	}
+	.mobile{
+		display:  flex;
+		width:  100%;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+
+
+
+   /* Контейнер <div> - необходим для размещения выпадающего содержимого */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      padding-top: 10px;
+      z-index: 0;
+      background-color: #33323D ;
+      width: 223px;
+      height: 186px;
+      margin-top: 20px;
+    }
+
+/* Ссылки внутри выпадающего списка */
+    .dropdown-content a {
+      text-transform: uppercase;
+      color: #ffffff;
+      font-family: 'Public Sans', serif;
+      text-align: center;
+      font-size: 12px;
+      padding-top: 2rem;
+      letter-spacing: 2px;
+      text-decoration: none;
+      display: block;
+      
+
+    }
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+   .dropdown-content a:hover {color: #5FB4A2;}
+
+/* Показать выпадающее меню (используйте JS, чтобы добавить этот класс .dropdown-content содержимого, когда пользователь нажимает на кнопку выпадающего списка) */
+   .show {display:block;}
+
+}

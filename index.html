@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="desctop">
+			<div class="logo">
+				<a href="#"><img src="img/logo.svg" alt="logo"/></a>
+			</div>
+			<div class="menu">
+				<ul>
+					<li class="list-item"><a href="#" class="active">home</a></li>
+					<li class="list-item"><a href="#">portfolio</a></li>
+					<li class="list-item"><a href="#">contact me</a></li>
+				</ul>
+			</div>
+		</nav>
+		<nav class="mobile">
+			<div class="logo">
+				<a href="#"><img src="img/logo.svg" alt="logo"/></a>
+			</div>
+			<div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn"><img src="img/hamburger.svg"/></button>
+               <div id="myDropdown" class="dropdown-content">
+                   <a href="#" class="dropMenu">home</a>
+					<a href="#" class="dropMenu">portfolio</a>
+					<a href="#" class="dropMenu">contact me</a>
+               </div>
+           </div>
+		</nav>
+
+	</header>
+	<script src="script.js"></script>
+	
+</body>
+</html>
